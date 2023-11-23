@@ -7,9 +7,6 @@ from tkinter.filedialog import askopenfilename as opfile
 
 
 def calculate_batch_intensity(image, batch_size):
-    if batch_size < 30 or batch_size > 80:
-        print("Недопустимый размер батча!")
-        return
 
     cv2.namedWindow("image")
     cv2.imshow("image", image)
